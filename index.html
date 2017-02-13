@@ -7,9 +7,11 @@
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <style>
     
 @import url(font-family: 'Roboto', sans-serif;);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
     
 body,h1,h2,h3,h4,h5,h6,w3-display-middle {font-family: 'Roboto', sans-serif;}
 body,html{
@@ -20,9 +22,11 @@ h1,h2,h3,h4,h5,h6,i,w3-content,w3-large,w3-margin-bottom{
     color: #777;
 }
 footer p{
-    color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif; ;
 }
 p{
+    font-family: 'Open Sans', sans-serif;
     color: black;
     
 }
@@ -131,6 +135,23 @@ fieldset.title legend {
   border-radius: 3px;
 }
 
+.social-network{
+  list-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  width:100%;
+}
+.social-network li{
+  display:inline-block;
+  margin: 30px;
+}
+.footer{
+  margin-bottom: 50px;
+}
+
+
+
 
 
 
@@ -167,115 +188,19 @@ fieldset.title legend {
   <button class = "opsirnije w3-text-black w3-btn w3-hover-black w3-transparent w3-padding-xlarge"><a href = "/"><b>DETALJNIJE</b></a></button>
   </div>
 </div>
-
-<!-- Druga parallax slika -->
-<div class= "druga bgimg-2 w3-display-container" id = "druga">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">GALERIJA</span>
-  </div>
-</div>
-
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
-
-  <!-- Galerija -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="imgs/img_p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="imgs/img_p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="imgs/img_p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="imgs/img_p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="imgs/img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="imgs/img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="imgs/img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="imgs/img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-green w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" style="max-width:100%">
-  </div>
-</div>
-
-<!-- Treca paralax slika -->
-<div class="bgimg-4 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">VOZNI PARK</span>
-  </div>
-</div>
-<!--Treci container-->
-<div class="w3-content w3-container w3-padding-64">
-    
-</div>
-
-<!-- Cetvrta parallax slika -->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">KONTAKT</span>
-  </div>
-</div>
-<!-- Kontakt container -->
-<div class="w3-content w3-container w3-padding-64">
-  <fieldset class="title">
-    <legend><h3>LOKACIJA</h3></legend>
-  </fieldset>
-  <p class="w3-center"><em>Ovde nas možete pronaći!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Google mape -->
-      <div id="googleMap" class="w3-round-large"></div>
-    </div>
-    <div class="w3-col m8 w3-container w3-section">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Cara Dušana 86, Zrenjanin<br>
-        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i>Telefon: +381 60 074563<br>
-        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Ovde napisite vas utisak o firmi BK Family:</p>
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" name = "ime" type="text" placeholder="Ime">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" name = "email" type="text" placeholder="E-mail">
-        </div>
-      </div>
-      <textarea class="w3-input w3-border w3-border w3-hover-light-grey" name = "komentar"  cols = "72" rows="4" placeholder="Komentar"></textarea>
-        <button onclick = "sendmail()" class = "w3-btn w3-dark-grey w3-hover-green w3-right w3-section" name = "submit" >Pošaljite</button>
-    </div>  
-  </div>
+<div class="social w3-padding-64">
+  <ul class = "w3-padding-32 social-network w3-center">
+    <li><img src = "icons/Facebook.png " style="width:92px; height:92px;" "></li>
+    <li><img src = "icons/Instagram.png" style="width:92px; height:92px;"></li>
+    <li><img src = "icons/Linkedin.png" style="width:92px; height:92px;"></li>
+    <li><img src = "icons/Twitter.png" style="width:92px; height:92px;"></li>
+    <li><img src = "icons/Youtube.png" style="width:92px; height:92px;"></li>
+  </ul>
 </div>
 <!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-16 w3-hover-green">
- <p id = "demo"><a href="" target="_blank" class="w3-hover-opacity">B&K Family D.O.O.</a> &copy <script type="text/javascript">
+<footer class="footer w3-center">
+ <p class = "" id = "demo"><a href="" target="_blank" class="w3-hover-opacity">Copyright &copy<b><a>Impuls Festival</a></b> Sva prava zadržana <script type="text/javascript">
   document.write(new Date().getFullYear());
 </script> Sva prava zadržana</p>
 </footer>
